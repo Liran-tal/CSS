@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6.2 - card</title>
+    <style>
+        div.polaroid{
+            margin: auto;
+            width: 400px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+        }
+
+        div.container{
+            padding: 10px;
+        }
+        div.container p{
+            font-weight: bolder;
+            font-size: larger;
+            color: salmon;
+        }
+        #nav{
+            list-style-type: none;
+            margin: 30px 30px;
+            padding: 0;
+            display: flex;
+            justify-content:space-evenly
+        }
+        #nav li{
+            display: inline;
+        }
+        #adopt a{
+            margin-top: 20px;
+            padding: 10px 10px;
+            margin-bottom: 20px;
+            font-size: larger;
+            color: white;
+            background-color: rgb(46, 18, 201);
+        }
+    </style>
+</head>
+<body>
+    <div class="polaroid">
+        <img src="images/PIXNIO-2604802-600x400.jpg" alt="Doris" style="width: 100%">
+        <div class="container">
+            <p>
+                <span id="name">Doris</span> is available for adoption!
+            </p>
+            <ul id="nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#more_pictures">More pictures</a></li>
+            </ul>
+            <div id="adopt"><a href="#contact">I want to adopt!</a></div>
+        </div>
+    </div>
+</body>
+</html>
