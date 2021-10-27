@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7.1 - Float</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .outline{
+            margin: 15vh auto;
+            border: 2px solid black;
+            width: 80vw;
+            height: 61vh;
+        }
+        .header{
+            margin: 5px 25%;
+            width: 60%;
+            height: 10%;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 200%;
+            background-color: orange;
+        }
+        /* this is the class for the main section */
+        .middleSection{
+            height: 75%;
+            background-color: white;
+            border-color: white;
+        }
+        .midLeft{
+            border: 1px solid black;
+            margin-right: 1%;
+            padding: 1% 2%;
+            float: left;
+            width: 40%;
+            background-color: olive;
+            text-align: left;
+            height: 100%;
+        }
+        .main{
+            border: 1px solid black;
+            margin-left: 41%; 
+            padding: 1% 2%;
+            /* display: inline; */
+            width: 59%;
+            background-color: blueviolet;
+            text-align: right;
+            height: 100%;
+        }
+        .footer{
+            background-color: dodgerblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="outline">
+        <header class="header">
+            <p>
+                Header
+            </p>
+        </header>
+        <div class="header middleSection">
+            <section class="middleSection midLeft">
+                <p>
+                    Side
+                </p> 
+            </section>
+            <main class="middleSection main">
+                <p>
+                    Main
+                </p>
+            </main>
+        </div>
+        <footer class="header footer">
+            Footer
+        </footer>
+    </div>
+    
+</body>
+</html>
