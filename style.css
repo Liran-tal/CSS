@@ -1,14 +1,22 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.clr{
+    clear: both;
+}
 body{
     background-image: url("images/cloud-gc90e4f786_1920.jpg");
     font-family: 'Rubik', sans-serif;
 }
 .card{
-    margin: auto;
-    width: 600px;
+    margin: 5% auto;
+    width: 60%;
+    height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
     background-color: lightgoldenrodyellow;
-    margin-top:7%;
 }
 header{
     padding-top: 5px;
@@ -41,11 +49,24 @@ footer{
     list-style-type: none;
     margin: 0px 30px;
     padding: 0px;
-    display: flex;
+    display: inline-block;
     justify-content:center;
     
 }
 #connection li{
     display: inline;
     padding: 10px;
+}
+.navbar{
+    /* float: left; */
+    display: block;
+    color: ;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
 }
