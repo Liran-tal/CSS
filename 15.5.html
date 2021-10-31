@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 10px;
+        }
+        .container{
+            width: 100vw;
+            height: 6vh;
+            background-color: lightgrey;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            line-height: 6vh;
+            text-align: center;
+            font-size: 1.6rem;
+            justify-content: space-between;
+        }
+        .boxes{
+            width: fit-content;
+            height: 6vh;
+            margin: 0vw 0.2vw;
+            display: inline-block;
+            align-items: center;
+        }
+        .boxes a{
+            
+        }
+        .navbar-head{
+            
+        }
+        .navbar-links{
+            
+        }
+        .box1{
+        
+        }
+        .box2{
+        
+        }
+        .box3{
+        
+        }
+        @media screen and (max-width: 768px) {
+            .container{
+                height: 100vh;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+            }
+            .boxes{
+                display: block;
+                width: 100vw;
+                margin: 0px;
+            }
+            .navbar-head{
+                margin-top: 2vh;
+            }
+            .navbar-links{
+            }
+        } 
+    </style>
+    <title>Exercise 15.5 - flex basics</title>
+</head>
+<body>
+    <div class="container">
+        <div class="boxes navbar-head">
+            APPLESEEDS
+        </div>
+        <nav class="navbar-links">
+            <div class="boxes box1">
+                <a href="#">HOME</a> 
+            </div>
+            <div class="boxes box2">
+                <a href="#">ABOUT</a> 
+            </div>
+            <div class="boxes box3">
+                <a href="#">PORTFOLIO</a> 
+            </div>
+            <div class="boxes box4">
+                <a href="#">CONTACT</a>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>
