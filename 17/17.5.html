@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div{
+            margin: 0vh auto;
+            padding: 25vh 28vw;
+            background-color: darkgray;
+            color: ghostwhite;
+            font-size: 1.52vw;
+        }
+        a[data-tooltip] {
+            position: relative;
+        }
+        a[data-tooltip]::before{
+            content: attr(data-tooltip);
+            position: absolute;
+            background-color: yellow;
+            padding: 0.2vw 0.5vw;
+            font-size: 1vw;
+            color: sienna;
+            border-radius: 15px;
+            bottom: 120%;
+            left: 0%;
+            display:none;
+        }
+        a[data-tooltip]::after{
+            content: '';
+            position: absolute;
+            bottom: 62%;
+            left: 6%;
+            border: 0.5vw solid transparent;
+            border-top-color: yellow;
+            display:none;
+        }
+        a[data-tooltip]:hover::after , a[data-tooltip]:hover::before{
+            display: block;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore explicabo repellendus nam maxime sunt ipsam quisquam quae earum. Illo odio, <a href="#" data-tooltip="A MIGHTY COOL LINK">THIS HERE IS LINK</a> natus exercitationem non porro rerum hic eum maxime est dignissimos. Maxime adipisci minus hic dolorum commodi, repellendus recusandae quod laudantium.
+    </div>
+</body>
+</html>
