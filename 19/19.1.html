@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8.1 - Buttons</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .clr{
+            clear: both;
+        }
+        .wrapper{
+            margin: 10vh auto;
+            border: 2px solid black;
+            width: 80vw;
+            height: 80vh;
+            background-color: rgb(24, 82, 128);
+        }
+        section{
+            padding: 1% 10%;
+            text-align: center;
+            height: 25%;
+        }
+        h2{
+            margin: 2% 2.5%;
+            color: white;
+        }
+        ul{
+            width: 100%;
+            list-style: none;
+            margin: 0;
+            padding-left: 30%;
+            display: inline-block;
+            justify-content:center;
+        }
+        li{
+            float: left;
+            padding: 5% 2%;
+            margin-right: 5%;
+        }
+        li input{
+            color: black;
+            display: block;
+        }
+        
+        .first_child{
+            font-size: 20px;
+        }
+        .secound_child{
+            font-size: 16px;
+            margin-top: 8%;
+        }
+        .third_child{
+            font-size: 12px;
+            margin-top: 20%;
+        }
+        .rounds{
+            border-radius: 10px;
+        }
+        .ghost{
+            background: transparent;
+        }
+        .red_body{
+            background-color: red;
+        }
+        .green_body{
+            background-color: green;
+        }
+        .blue_body{
+            background-color: skyblue;
+        }
+        .orange_body{
+            background-color: orange;
+        }
+        .yellow_body{
+            background-color: yellow;
+        }
+        .gray_body{
+            background-color: gray;
+        }
+        .green_border{
+            border-color: green;
+        }
+        .red_border{
+            border: 1px solid red;
+        }
+        .blue_border{
+            border-color: skyblue;
+        }
+        .orange_border{
+            border-color: orange;
+        }
+        .yellow_border{
+            border-color: yellow;
+        }
+        .gray_border{
+            border-color: gray;
+        }
+        .darken:hover {
+            filter: brightness(75%);
+        }
+        .fill_green:hover{
+            background: green;
+        }
+        .fill_red:hover{
+            background: red;
+        }
+        .fill_blue:hover{
+            background: blue;
+        }
+        .fill_orange:hover{
+            background: orange;
+        }
+        .fill_yellow:hover{
+            background: yellow;
+        }
+        .fill_gray:hover{
+            background: gray;
+        }
+        .transition-set{
+            transition: all 2s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Flat full buttons (default) -->
+        <section>
+            <h2>Flat</h2>
+            <ul class="list">
+                <li>
+                    <input class="green_body darken first_child transition-set" type="button" value="Register">
+                </li>
+                <li>
+                    <input class="red_body darken secound_child transition-set" type="button" value="Claer">
+                </li>
+                <li>
+                    <input class="blue_body darken third_child transition-set" type="button" value="Submit">
+                </li>
+            </ul>    
+        </section>
+        <div class="clear"></div>
+        <!-- Round full buttons -->
+        <section>
+            <h2>Round</h2>
+            <ul>
+                <li>
+                    <input class="orange_body darken rounds first_child transition-set" type="button" value="Register">
+                </li>
+                <li>
+                    <input class="yellow_body darken rounds secound_child transition-set" type="button" value="Clear">
+                </li>
+                <li>
+                    <input class="gray_body darken rounds third_child transition-set" type="button" value="Submit">
+                </li>
+            </ul>
+        </section>
+        <div class="clear"></div>
+        <!-- Flat ghost buttons -->
+        <section>
+            <h2>Flat Ghost</h2>
+            <ul>
+                <li>
+                    <input class="fill_green green_border ghost first_child transition-set" type="button" value="Register">
+                </li>
+                <li>
+                    <input class="fill_red red_border ghost secound_child transition-set" type="button" value="Clear">
+                </li>
+                <li>
+                    <input class="fill_blue blue_border ghost third_child transition-set" type="button" value="Submit">
+                </li>
+            </ul>    
+        </section>
+        <div class="clear"></div>
+        <!-- Round ghosts buttons -->
+        <section>
+            <h2>Round Ghost</h2>
+            <ul>
+                <li>
+                    <input class="fill_orange orange_border ghost rounds first_child transition-set" type="button" value="Register">
+                </li>
+                <li>
+                    <input class="fill_yellow yellow_border ghost rounds secound_child transition-set" type="button" value="Clear">
+                </li>
+                <li>
+                    <input class="fill_gray gray_border ghost rounds third_child transition-set" type="button" value="Submit">
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
+    </div>
+</body>
+</html>
