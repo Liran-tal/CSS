@@ -1,0 +1,9 @@
+
+
+.circle-side-lights-rotate{
+    --base_color: grey;
+    animation-iteration-count:infinite; 
+    from{
+        border-top-color: ;
+    }
+}
