@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar{
+            width: 40vw;
+            height: 4vh;
+            margin-top: 1vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            position: relative;
+            padding: 0vh 1vw;
+            text-align: center;
+            font-weight: bolder;
+            overflow: hidden;
+        }
+        .box::before, .box::after{
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            transition: all 1s ease-in-out;
+            border: 2px solid transparent;
+        }
+        .box::before{
+            top: 0px;
+            left: 0px;
+            border-top-color: black;
+            transform: translateX(-100%);
+        }
+        .box::after{
+            bottom: 0px;
+            right: 0px;
+            border-bottom-color: black;
+            transform: translateX(100%);
+        }
+        .box:hover::before , .box:hover::after{
+            transform: translateX(0);
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="box">HOME</div>
+            <div class="box">ABOUT</div>
+            <div class="box">SERVICES</div>
+            <div class="box">PORTFOLIO</div>
+            <div class="box">CONTACT</div>
+        </nav>  
+    </div>
+</body>
+</html>
