@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0rem;
+            padding: 0rem;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+            border: 3px solid tomato;
+            margin-top: 25vh;
+        }
+        .box{
+            height: 111.6px;
+            width: 376px;
+            padding: 30px 100px;
+            margin: 10px 70px;
+            border: 5px solid black;
+            background: transparent;
+            line-height: 41.6px;
+            font-size: 36px;
+            text-align: center;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        /* TOP LEFT */
+        .toRotate{
+            position: relative;
+            width: 304px;
+        }
+        .toRotate::before{
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            background-color: gold;
+            border: unset;
+            transition: all 2s ease;
+            transform-origin: top left;
+            transform: rotate(-90deg);
+
+        }
+        .toRotate:hover:before{
+                transform: rotate(0deg);
+                color: transparent;
+        }
+
+        /* TOP MIDDLE */
+        .toTranslate{
+            width: 342.663px;
+            position: relative;
+            transition: all 2s ease-in-out;
+        }
+        .toTranslate::before{
+            content: "";
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            line-height: 100%;
+            transform: translateX(-100%);
+            background-color: dimgray;
+            transition: all 2s ease-in-out;
+        }
+        .toTranslate:hover{
+            color: white;
+        }
+        .toTranslate:hover::before{
+            transform: translateX(0);
+            display: inline-block;
+        }
+
+        /* TOP RIGHT */
+        .toTranslateY{
+            width: 376.325px; 
+            position: relative;
+        }
+
+
+        .toTranslateY::after{
+            content: "YEAH!";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 101.6px;
+            width: 100%;
+            line-height: 101.6px;
+            transform: translateY(-100%);
+            background-color: red;
+            transition: all 1s linear;
+        }
+        .toTranslateY:hover:after{
+            transform: translateY(0px);
+        }
+
+        /* BOTTOM MIDDLE */
+        .toScale{
+            width: 448px;
+            margin-left: 33%;
+            position: relative;
+        }
+        .toScale::before{
+            content: "Scale & Opacity";
+            position: absolute;
+            top: -0.1px;
+            left: 0px;
+            height: 102.3px;
+            line-height: 102px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            transition: all 1s ease-in-out;
+            transform: scale3d(150%, 100%, 0);
+            opacity: 0.5;            
+        }
+        .toScale:hover::before{
+            display: block;
+            opacity: 1;
+            transform: scale3d(1, 1, 1);
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="toRotate box">
+            Rotate
+        </div>
+        <div class="toTranslate box">
+            Translate
+        </div>
+        <div class="toTranslateY box">
+            Translate Y
+        </div>
+        <div class="toScale box">
+            Scale & Opacity
+        </div>
+    </div>
+</body>
+</html>
