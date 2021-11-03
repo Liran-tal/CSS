@@ -7,52 +7,70 @@
     <style>
         .container{
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: 
+            'box1 box1 box1 box1'
+            'box2 box3 box3 box4'
+            'box5 box5 box5 box5';
             grid-gap: 1rem;
             margin: 3rem 3rem;
         }
-        .box{
+        .boxes{
             padding: 3rem;
             background-color: lightgray;
             color: black;
             text-align: center;
-            /* border: 3px solid black; */
-            border-radius: 10px;
+            border-radius: 15px;
         }
-        .box:nth-child(1){
-            grid-column: 1 / span 4;
+        
+        .box1{
+            grid-area: box1;
             background-color: coral;
         }
-        .box:nth-child(2){
-            grid-column: 1 / span 2;
-            grid-row: 2 / span 2;
+        .box2{
+            grid-area: box2;
             background-color: blue;
         }
-        .box:nth-child(3){
-            grid-column: 3 / span 2;
-            grid-row: 2 / span 1;
+        .box3{
+            grid-area: box3;
             background-color: green;
         }
-        .box:nth-child(4){
-            grid-column: 3 / span 1;
+        .box4{
+            grid-area: box4;
             background-color: purple;
         }
-        .box:nth-child(5){
-            grid-column: 4 / span 1;
-            background-color: purple;
+        .box5{
+            grid-area: box5;
+            background-color: yellow;
         }
-
+        @media (max-width: 768px) {
+            .container{
+                grid-template: 
+                'box1 box1 box1 box1'
+                'box2 box3 box3 box3'
+                'box4 box4 box4 box4'
+                'box5 box5 box5 box5';
+            }     
+        }
+        @media (max-width: 500px) {
+            .container{
+                grid-template: 
+                'box1'
+                'box2'
+                'box3'
+                'box4'
+                'box5';
+            }     
+        }
     </style>
     <title>Document</title>
 </head>
 <body>
     <div class="container">
-        <div class="box">box</div>
-        <div class="box">box</div>
-        <div class="box">box</div>
-        <div class="box">box</div>
-        <div class="box">box</div>
+        <div class="boxes box1">box</div>
+        <div class="boxes box2">box</div>
+        <div class="boxes box3">box</div>
+        <div class="boxes box4">box</div>
+        <div class="boxes box5">box</div>
     </div>
 </body>
 </html>
