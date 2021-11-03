@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            padding: 10px;
+            min-height: 100vh;
+            min-width: 100vw;
+            display: grid;
+            gap: 16px 16px;
+            grid-template-areas:
+                "img1 img1 img2 img2 img2 img3 img4 img4"
+                "img1 img1 img2 img2 img2 img3 img4 img4"
+                "img5 img5 img2 img2 img2 img8 img8 img9"
+                "img5 img5 img6 img6 img7 img8 img8 img9"
+                "img5 img5 img6 img6 img13 img13 img13 img9"
+                "img10 img11 img11 img12 img13 img13 img13 img14"
+                "img10 img11 img11 img12 img13 img13 img13 img14";
+        }
+
+        .imgs_container{
+            background-position: center;
+            background-size: cover;
+            border: 3px solid black;
+            min-height: 200px;
+        }
+        .img1 { 
+            grid-area: img1; 
+            background-image: url(./grid-gallery/images/gal-1.jpeg);
+        }
+
+        .img2 {
+            grid-area: img2; 
+            background-image: url(./grid-gallery/images/gal-2.jpeg);
+        }
+
+        .img3 { 
+            grid-area: img3; 
+            background-image: url(./grid-gallery/images/gal-3.jpeg);
+        }
+
+        .img4 { 
+            grid-area: img4; 
+            background-image: url(./grid-gallery/images/gal-4.jpeg);
+        }
+
+        .img5 { 
+            grid-area: img5; 
+            background-image: url(./grid-gallery/images/gal-5.jpeg);
+        }
+
+        .img6 { 
+            grid-area: img6; 
+            background-image: url(./grid-gallery/images/gal-6.jpeg);
+        }
+
+        .img7 { 
+            grid-area: img7; 
+            background-image: url(./grid-gallery/images/gal-7.jpeg);
+        }
+
+        .img8 { 
+            grid-area: img8; 
+            background-image: url(./grid-gallery/images/gal-8.jpeg);
+        }
+
+        .img9 { 
+            grid-area: img9; 
+            background-image: url(./grid-gallery/images/gal-9.jpeg);
+        }
+
+        .img10 { 
+            grid-area: img10; 
+            background-image: url(./grid-gallery/images/gal-10.jpeg);
+        }
+
+        .img11 { 
+            grid-area: img11; 
+            background-image: url(./grid-gallery/images/gal-11.jpeg);
+        }
+
+        .img12 { 
+            grid-area: img12; 
+            background-image: url(./grid-gallery/images/gal-12.jpeg);
+        }
+
+        .img13 { 
+            grid-area: img13; 
+            background-image: url(./grid-gallery/images/gal-13.jpeg);
+        }
+
+        .img14 { 
+            grid-area: img14; 
+            background-image: url(./grid-gallery/images/gal-14.jpeg);
+        }
+
+        @media (max-width: 768px) {
+             .container{
+                overflow: scroll;
+                grid-gap: auto;
+                grid-template-areas:
+                    'img1 img1 img2 img2'
+                    'img1 img1 img2 img2'
+                    'img3 img3 img4 img4'
+                    'img3 img3 img4 img4'
+                    'img5 img5 img6 img6'
+                    'img5 img5 img6 img6'
+                    'img7 img7 img8 img8'
+                    'img7 img7 img8 img8'
+                    'img9 img9 img10 img10'
+                    'img9 img9 img10 img10'
+                    'img11 img11 img12 img12'
+                    'img11 img11 img12 img12'
+                    'img13 img13 img14 img14'
+                    'img13 img13 img14 img14'
+             }
+        }
+        @media (max-width: 500px) {
+             .container{
+                overflow: scroll;
+                grid-gap: auto;
+                grid-template-areas:
+                    'img1'
+                    'img2'
+                    'img3'
+                    'img4'
+                    'img5'
+                    'img6'
+                    'img7'
+                    'img8'
+                    'img9'
+                    'img10'
+                    'img11'
+                    'img12'
+                    'img13'
+                    'img14'
+             }
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="imgs_container img1"></div>
+        <div class="imgs_container img2"></div>
+        <div class="imgs_container img3"></div>
+        <div class="imgs_container img4"></div>
+        <div class="imgs_container img5"></div>
+        <div class="imgs_container img6"></div>
+        <div class="imgs_container img7"></div>
+        <div class="imgs_container img8"></div>
+        <div class="imgs_container img9"></div>
+        <div class="imgs_container img10"></div>
+        <div class="imgs_container img11"></div>
+        <div class="imgs_container img12"></div>
+        <div class="imgs_container img13"></div>
+        <div class="imgs_container img14"></div>
+      </div>
+</body>
+</html>
